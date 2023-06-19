@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Questrial&family=Source+Serif+4&display=swap');
+
+$color-light-pink: #F0E4CF;
+$color-dark-violet: #8265E0;
+$color-text-main: #1A2147;
+$color-text-secondary: #387B5E;
+$font-main: 'Poppins', sans-serif;
+$font-secondary: 'Questrial', sans-serif;
+$font-tertiary: 'Source Serif 4', serif;
+$color-white: #fff;
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -5,10 +16,167 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px
 }
 
 body {
   font-family: Arial, sans-serif;
+}
 
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 118rem;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: $color-light-pink;
+  padding: 0 0 35.2rem 0;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.4rem 6.4rem 2.4rem 4rem;
+    margin-bottom: 11.2rem;
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+  }
+
+  &__logo-picture {
+    max-width: 3.8rem;
+  }
+
+  &__logo-title {
+    font-size: 2.8rem;
+    color: $color-text-main;
+
+  }
+
+  &__nav {
+    font-family: $font-secondary;
+    display: flex;
+    align-items: center;
+    gap: 4.4rem;
+  }
+
+  &__nav-item {
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $color-text-main;
+
+    &--dropdown {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: .4rem;
+        right: -2rem;
+        content: "";
+        display: block;
+        width: .8rem;
+        height: .8rem;
+        border-top: 1px solid $color-text-main;
+        border-right: 1px solid $color-text-main;
+        transform: rotate(135deg);
+      }
+    }
+  }
+
+  &__nav-item {
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__button {
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__heading-main {
+    font-family: $font-main;
+    font-weight: 800;
+    font-size: 7.2rem;
+    line-height: 8rem;
+    letter-spacing: -4%;
+    color: $color-text-main;
+  }
+
+  &__heading-secondary {
+    font-weight: 400;
+    font-size: 7.6rem;
+    line-height: 8rem;
+    color: $color-text-secondary;
+    font-family: $font-tertiary;
+    letter-spacing: -4%;
+    margin-bottom: 3.9rem;
+  }
+
+  &__text {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin: 0 auto 9.3rem;
+    max-width: 51.8rem;
+  }
+
+  &__picture {
+    margin: 0 auto;
+    max-width: 118rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}
+
+.button {
+  border-radius: 8px;
+  border: 1px solid $color-dark-violet;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+  font-family: $font-main;
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  transition: all 0.2s ease-in;
+  &:hover {
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.button--transparent {
+  border: 1px solid $color-dark-violet;
+  background-color: transparent;
+}
+
+.button--violet {
+  border: 1px solid $color-dark-violet;
+  background-color: $color-dark-violet;
+  color: $color-white;
+  &:hover {
+    background-color: rgba(#8265E0, 0.8);
+  }
 }
