@@ -1,28 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Questrial&family=Source+Serif+4&display=swap");
-*, *::after, *::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  width: 100%;
-  max-width: 118rem;
-  margin: 0 auto;
-}
-
 .main {
   background-color: #F0E4CF;
   padding: 0 0 35.2rem 0;
@@ -120,6 +96,30 @@ img {
   max-width: 100%;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 118rem;
+  margin: 0 auto;
+}
+
 .button {
   border-radius: 8px;
   border: 1px solid #8265E0;
@@ -134,18 +134,16 @@ img {
 .button:hover {
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-.button--transparent {
+.button .button--transparent {
   border: 1px solid #8265E0;
   background-color: transparent;
 }
-
-.button--violet {
+.button .button--violet {
   border: 1px solid #8265E0;
   background-color: #8265E0;
   color: #fff;
 }
-.button--violet:hover {
+.button .button--violet:hover {
   background-color: rgba(130, 101, 224, 0.8);
 }
 
