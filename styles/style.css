@@ -1,4 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Questrial&family=Source+Serif+4&display=swap");
+.button {
+  border-radius: 8px;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  transition: all 0.2s ease-in;
+}
+.button:hover {
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.button--transparent {
+  border: 1px solid #8265E0;
+  background-color: transparent;
+}
+.button--violet {
+  border: 1px solid #8265E0;
+  background-color: #8265E0;
+  color: #fff;
+}
+.button--violet:hover {
+  background-color: rgba(130, 101, 224, 0.8);
+}
+.button--white {
+  background-color: #fff;
+  color: #8265E0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding: 8px 12px 8px 12px;
+  font-family: "Questrial", sans-serif;
+}
+.button--green {
+  background-color: #4FAD84;
+  color: #fff;
+}
+.button--green-border {
+  border: 1px solid #4FAD84;
+  color: #4FAD84;
+}
+
 .main {
   background-color: #F0E4CF;
   padding: 0 0 35.2rem 0;
@@ -96,6 +139,182 @@
   max-width: 100%;
 }
 
+.businesses {
+  padding: 7rem 8rem 8rem;
+  background-color: #EBF3F5;
+  margin: -13rem auto 8rem auto;
+  width: 100%;
+  max-width: 118rem;
+  border-radius: 2.4rem;
+}
+.businesses__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.businesses__left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.businesses__button-white {
+  align-self: flex-start;
+}
+.businesses__title {
+  font-family: "Poppins", sans-serif;
+  max-width: 43.7rem;
+  font-size: 6rem;
+  line-height: 6.8rem;
+}
+.businesses__main-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.businesses__text {
+  max-width: 39.2rem;
+  font-family: "Source Serif 4", serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  letter-spacing: -2%;
+}
+.businesses__right {
+  display: flex;
+  justify-self: flex-start;
+  width: 100%;
+  max-width: 42rem;
+}
+.businesses__contractors {
+  padding: 2.5rem 2.1rem 2.1rem 2.1rem;
+  background-color: #fff;
+  color: #214937;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 100%;
+  max-width: 41.9rem;
+}
+.businesses__invoice-title {
+  margin-bottom: 2rem;
+  color: #214937;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.businesses__contactors-items {
+  list-style-type: none;
+  border-radius: 12px;
+  border: 1px solid #EDF7F3;
+  overflow: hidden;
+}
+.businesses__contractors-item {
+  border-bottom: 1px solid #EDF7F3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 15px;
+}
+.businesses__contractors-item > img {
+  max-width: 3.5rem;
+}
+.businesses__contractors-item > span {
+  color: #666A84;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.businesses__contractors-item:last-of-type {
+  border-bottom: none;
+}
+.businesses__contractors-item:hover {
+  background-color: #EDF7F3;
+  cursor: pointer;
+}
+.businesses__contractors-item:hover > span {
+  color: #1A2147;
+}
+.businesses__contractors-item--active {
+  background-color: #EDF7F3;
+}
+.businesses__contractors-item--active > span {
+  color: #1A2147;
+}
+.businesses__invoice {
+  max-width: 21rem;
+  width: 100%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-family: "Source Serif 4", serif;
+  color: #fff;
+  background-color: #214937;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.businesses__heading-right {
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: -3%;
+  margin-bottom: 2.3rem;
+}
+.businesses__heading-right-sub {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: inherit;
+  margin-bottom: 1.8rem;
+}
+.businesses__invoice-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.businesses__invoice-item > span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  color: inherit;
+  opacity: 0.3;
+}
+.businesses__invoice-item > p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+.businesses__invoice-button {
+  margin-top: 8rem;
+  padding: 1.65rem 7.05rem;
+  color: #1A2147;
+  text-transform: capitalize;
+}
+.businesses__picture {
+  max-width: 94rem;
+  width: 100%;
+  margin: -5rem auto 6rem auto;
+}
+.businesses__img {
+  max-width: 100%;
+}
+.businesses__bottom-text {
+  margin: 0 auto;
+  font-family: "Source Serif 4", serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  max-width: 62rem;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -108,6 +327,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 
 img {
@@ -118,33 +338,6 @@ img {
   width: 100%;
   max-width: 118rem;
   margin: 0 auto;
-}
-
-.button {
-  border-radius: 8px;
-  border: 1px solid #8265E0;
-  padding: 1.2rem 2.4rem;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  transition: all 0.2s ease-in;
-}
-.button:hover {
-  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.button .button--transparent {
-  border: 1px solid #8265E0;
-  background-color: transparent;
-}
-.button .button--violet {
-  border: 1px solid #8265E0;
-  background-color: #8265E0;
-  color: #fff;
-}
-.button .button--violet:hover {
-  background-color: rgba(130, 101, 224, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */

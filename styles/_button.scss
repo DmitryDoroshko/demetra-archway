@@ -1,6 +1,7 @@
+@import "variables";
+
 .button {
   border-radius: 8px;
-  border: 1px solid $color-dark-violet;
   padding: 1.2rem 2.4rem;
   text-decoration: none;
   font-family: $font-main;
@@ -27,15 +28,26 @@
   }
 
   &--white {
+    background-color: $color-white;
+    color: $color-dark-violet;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 8px 12px 8px 12px;
+    font-family: $font-secondary;
   }
 
   &--green {
+    background-color: $color-light-green;
+    color: $color-white;
   }
 
   &--transparent {
   }
 
   &--green-border {
+    border: 1px solid $color-light-green;
+    color: $color-light-green;
   }
 
 }
