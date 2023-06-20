@@ -1,0 +1,68 @@
+@import "variables";
+
+.cards {
+  margin-bottom: 9rem;
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    max-width: 55rem;
+    padding: 11.1rem 11.2rem 6rem 11.2rem;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+  }
+
+  &__card--left {
+    background-color: $color-light-pink-2;
+  }
+
+  &__img {
+    margin-bottom: 9.4rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content-inner {
+
+  }
+
+  &__heading {
+    margin-bottom: 3.1rem;
+    font-family: $font-main;
+    font-weight: 800;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+  }
+
+  &__text {
+    margin-bottom: 6.2rem;
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+
+  &__card--right {
+    background-color: $color-light-blue-2;
+  }
+
+  &__button {
+    align-self: center;
+    margin-top: auto;
+  }
+}
+
+
+

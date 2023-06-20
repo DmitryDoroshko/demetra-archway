@@ -1,4 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Questrial&family=Source+Serif+4&display=swap");
+.cards {
+  margin-bottom: 9rem;
+}
+.cards__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cards__card {
+  max-width: 55rem;
+  padding: 11.1rem 11.2rem 6rem 11.2rem;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+.cards__card--left {
+  background-color: #F9F7EC;
+}
+.cards__img {
+  margin-bottom: 9.4rem;
+}
+.cards__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards__heading {
+  margin-bottom: 3.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 4.2rem;
+  line-height: 5.2rem;
+}
+.cards__text {
+  margin-bottom: 6.2rem;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+.cards__card--right {
+  background-color: #EDF7F3;
+}
+.cards__button {
+  align-self: center;
+  margin-top: auto;
+}
+
 .button {
   border-radius: 8px;
   padding: 1.2rem 2.4rem;
@@ -40,6 +91,10 @@
 .button--green-border {
   border: 1px solid #4FAD84;
   color: #4FAD84;
+}
+.button--light-pink {
+  background-color: #F0E4CF;
+  color: #CC9E6C;
 }
 
 .main {
@@ -147,7 +202,12 @@
   max-width: 118rem;
   border-radius: 2.4rem;
 }
+.businesses__inner {
+  position: relative;
+}
 .businesses__content {
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -298,6 +358,8 @@
   text-transform: capitalize;
 }
 .businesses__picture {
+  position: relative;
+  z-index: 5;
   max-width: 94rem;
   width: 100%;
   margin: -5rem auto 6rem auto;
