@@ -1,6 +1,7 @@
 @import "variables";
 
 .button {
+  display: inline-block;
   border-radius: 8px;
   padding: 1.2rem 2.4rem;
   text-decoration: none;
@@ -40,9 +41,6 @@
   &--green {
     background-color: $color-light-green;
     color: $color-white;
-  }
-
-  &--transparent {
   }
 
   &--green-border {

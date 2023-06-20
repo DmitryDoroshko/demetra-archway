@@ -51,6 +51,7 @@
 }
 
 .button {
+  display: inline-block;
   border-radius: 8px;
   padding: 1.2rem 2.4rem;
   text-decoration: none;
@@ -375,6 +376,97 @@
   font-size: 3.2rem;
   line-height: 4rem;
   max-width: 62rem;
+}
+
+.get-paid {
+  background: #F4F1FE;
+  width: 100%;
+  max-width: 118rem;
+  margin: 0 auto 12rem auto;
+  border-top-left-radius: 58rem;
+  border-top-right-radius: 58rem;
+  padding: 13.8rem 8rem 11rem 8rem;
+  text-align: center;
+}
+.get-paid__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-paid__main {
+  margin-bottom: 13rem;
+}
+.get-paid__white-button {
+  margin-bottom: 3.8rem;
+}
+.get-paid__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 6.8rem;
+  letter-spacing: -3%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.get-paid__subtitle {
+  font-family: "Source Serif 4", serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: -2%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.get-paid__text {
+  max-width: 53rem;
+  font-family: "Questrial", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: -2%;
+  text-align: center;
+  margin-bottom: 5.5rem;
+}
+.get-paid__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+.get-paid__sub-main {
+  text-align: center;
+}
+.get-paid__sub-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 4.2rem;
+  letter-spacing: -3%;
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto 3rem;
+}
+.get-paid__sub-text {
+  font-family: "Questrial", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: -2%;
+  text-align: center;
+  max-width: 53rem;
+  margin-bottom: 12.5rem;
+}
+.get-paid__pictures {
+  position: relative;
+}
+.get-paid__img-main {
+  max-width: 100%;
+}
+.get-paid__img-secondary {
+  position: absolute;
+  max-width: 20%;
+  top: -18%;
+  right: 10%;
 }
 
 *, *::after, *::before {
