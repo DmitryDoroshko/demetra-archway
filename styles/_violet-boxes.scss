@@ -1,0 +1,65 @@
+@import "variables";
+
+.violet-boxes {
+
+  &__inner {
+    border-radius: 2.4rem;
+    background-color: $color-text-main;
+    padding: 4.2rem 8rem 4.2rem 5.5rem;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 5.5rem;
+  }
+
+  &__item-left {
+    padding-right: 4rem;
+    border-right: 1px solid $color-light-green;
+  }
+
+  &__item-right {
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 6rem;
+  }
+
+  &__content {
+  }
+
+  &__heading {
+    font-family: $font-main;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 3.2rem;
+    letter-spacing: -1%;
+    text-align: left;
+    margin-bottom: 2.2rem;
+  }
+
+  &__text {
+    max-width: 37rem;
+    font-family: $font-secondary;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  &__link {
+    font-family: $font-secondary;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    letter-spacing: 0;
+    text-align: left;
+    color: $color-light-green;
+  }
+}

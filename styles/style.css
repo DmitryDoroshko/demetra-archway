@@ -512,6 +512,63 @@
   letter-spacing: -1%;
   text-align: left;
 }
+.why-pay__text {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: -1%;
+  text-align: left;
+}
+.violet-boxes__inner {
+  border-radius: 2.4rem;
+  background-color: #1A2147;
+  padding: 4.2rem 8rem 4.2rem 5.5rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.violet-boxes__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 5.5rem;
+}
+.violet-boxes__item-left {
+  padding-right: 4rem;
+  border-right: 1px solid #4FAD84;
+}
+.violet-boxes__img {
+  width: 100%;
+  max-width: 6rem;
+}
+.violet-boxes__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 3.2rem;
+  letter-spacing: -1%;
+  text-align: left;
+  margin-bottom: 2.2rem;
+}
+.violet-boxes__text {
+  max-width: 37rem;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0;
+  text-align: left;
+}
+.violet-boxes__link {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0;
+  text-align: left;
+  color: #4FAD84;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
