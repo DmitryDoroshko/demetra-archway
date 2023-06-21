@@ -656,6 +656,70 @@
   opacity: 0.7;
 }
 
+.footer {
+  padding: 4rem 0 0 0;
+}
+.footer__content {
+  padding-bottom: 6.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+.footer__left {
+  flex: 0 0 50%;
+  display: flex;
+  gap: 8.1rem;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+.footer__title {
+  margin-bottom: 1.8rem;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: -1%;
+  text-align: left;
+  opacity: 0.7;
+}
+.footer__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.footer__text-item {
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: -1%;
+  text-align: left;
+  color: #1A2147;
+}
+.footer__right {
+  flex: 0 0 50%;
+}
+.footer__img {
+  margin-bottom: 2.4rem;
+}
+.footer__copy {
+  padding-top: 2.4rem;
+  padding-bottom: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.7;
+}
+.footer__copy-left, .footer__copy-right {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: -1%;
+  text-align: left;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
