@@ -4,6 +4,10 @@
   position: relative;
   z-index: 10;
 
+  @media only screen and (max-width: $breakpoint-largest) {
+    padding: 2rem;
+  }
+
   &__inner {
     border-radius: 2.4rem;
     background-color: $color-text-main;
@@ -11,6 +15,12 @@
     color: $color-white;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
   }
 
   &__item {
@@ -22,6 +32,11 @@
   &__item-left {
     padding-right: 4rem;
     border-right: 1px solid $color-light-green;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      border: none;
+      padding-right: 0;
+    }
   }
 
   &__item-right {
