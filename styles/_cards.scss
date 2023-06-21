@@ -7,6 +7,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: $breakpoint-largest) {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
   }
 
   &__card {
@@ -18,6 +23,14 @@
     align-items: center;
     text-align: center;
     flex: 1;
+
+    @media only screen and (max-width: $breakpoint-small) {
+      padding: 8rem 8rem 4rem 8rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+      padding: 6rem 6rem 3rem 6rem;
+    }
   }
 
   &__card--left {

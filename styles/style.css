@@ -7,6 +7,13 @@
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 75em) {
+  .cards__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+}
 .cards__card {
   max-width: 55rem;
   padding: 11.1rem 11.2rem 6rem 11.2rem;
@@ -16,6 +23,16 @@
   align-items: center;
   text-align: center;
   flex: 1;
+}
+@media only screen and (max-width: 37.5em) {
+  .cards__card {
+    padding: 8rem 8rem 4rem 8rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .cards__card {
+    padding: 6rem 6rem 3rem 6rem;
+  }
 }
 .cards__card--left {
   background-color: #F9F7EC;
