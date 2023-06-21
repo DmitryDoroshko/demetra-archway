@@ -889,6 +889,11 @@ html {
     font-size: 37.5%;
   }
 }
+@media only screen and (min-width: 125em) {
+  html {
+    font-size: 100%;
+  }
+}
 
 body {
   font-family: Arial, sans-serif;
