@@ -1,6 +1,8 @@
 @import "variables";
 
 .violet-boxes {
+  position: relative;
+  z-index: 10;
 
   &__inner {
     border-radius: 2.4rem;
