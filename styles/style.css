@@ -792,10 +792,27 @@
 .footer {
   padding: 4rem 0 0 0;
 }
+@media only screen and (max-width: 75em) {
+  .footer__inner {
+    padding: 2rem;
+  }
+}
 .footer__content {
   padding-bottom: 6.2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__content {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
 }
 .footer__left {
   flex: 0 0 50%;

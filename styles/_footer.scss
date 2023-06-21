@@ -4,12 +4,25 @@
   padding: 4rem 0 0 0;
 
   &__inner {
+    @media only screen and (max-width: $breakpoint-largest) {
+      padding: 2rem;
+    }
   }
 
   &__content {
     padding-bottom: 6.2rem;
     border-bottom: 1px solid rgba($color-black, .3);
     display: flex;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+    }
   }
 
   &__left {
