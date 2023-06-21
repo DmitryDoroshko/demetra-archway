@@ -9,6 +9,11 @@
 
   &__inner {
     padding: 25.8rem 0 14.4rem 0;
+    
+    @media only screen and (max-width: $breakpoint-large) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 
   &__main-content {
@@ -30,9 +35,18 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
   }
 
   &__overview-item {
+    @media only screen and (max-width: $breakpoint-medium) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__overview-main {

@@ -698,6 +698,12 @@
 .get-started__inner {
   padding: 25.8rem 0 14.4rem 0;
 }
+@media only screen and (max-width: 62.5em) {
+  .get-started__inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 .get-started__main-content {
   padding-bottom: 8rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -715,6 +721,17 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .get-started__overviews {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .get-started__overview-item {
+    margin-bottom: 2rem;
+  }
 }
 .get-started__overview-title {
   font-family: "Source Serif 4", serif;
